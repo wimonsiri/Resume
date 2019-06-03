@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap');
+
+input, button, select, textarea, body, .lead, .font-body {
+	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: "Roboto", lucida grande, Arial, sans-serif;
+		font-weight: 300;
+		line-height:@line-height-body;
+		strong, &.bold, .bold {
+			font-weight:700;
+		}
+	}
+}
+h1, h2, h3, h4, h5, h6, .font-head {
+	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
+		line-height:@line-height-heading;
+		strong, &.bold, .bold {
+			font-weight:700;
+		}
+	}
+}
+
+/*-------------------------------------------*\
+Main Variables
+\*-------------------------------------------*/
+
+@baseColor : #366D8B;
+@buttonMain : #FF8800;
+@buttonCustom : #2F6280;
+@line-height-heading: 1.4;
+@line-height-body: 1.5;
+@pixelfont: 16px;
+@h1 : 38px;
+@h2 : 30px;
+@h3 : 24px;
+@h4 : 20px;
+@h5 : 18px;
+@h6 : 16px;
+@lead: 18px;
+@accent2 : #FF8800;
+@accent3 : #737373;
+@accent4 : #074569;
+@accent5 : #FA9A2A;
+
+/* Do not touch */
+@darkColor : #000; 
+@lightColor : #fff;
+
+#header {
+    padding:30px 30px;
+    background-color:#b5cfd9;
+}
+
+a.brand {
+    text-decoration: none;
+    color:#04151D;
+    .brand-name {
+        position: relative;
+        display: inline-block;
+        margin-left:30px;
+        color:#04151D;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size:18px;
+        text-transform:uppercase;
+        letter-spacing:0.25em;
+    }
+    .fa-cat {
+        color: #f05567;
+    }
+    &:hover {
+        .brand-name {
+            color: #f05567;
+        }
+    }
+}
+
+body {
+    background:#ebebeb;
+}
