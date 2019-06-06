@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap');
+@import url("https://use.typekit.net/wpp7fiq.css");
 
 input, button, select, textarea, body, .lead, .font-body {
 	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
-		font-family: "Roboto", lucida grande, Arial, sans-serif;
+		font-family: "soleil", lucida grande, Arial, sans-serif;
 		font-weight: 300;
 		line-height:@line-height-body;
 		strong, &.bold, .bold {
@@ -16,7 +17,8 @@ h1, h2, h3, h4, h5, h6, .font-head {
 	&, &.h1, &.h2, &.h3, &.h4, &.h5, &.h6 {
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 700;
-		line-height:@line-height-heading;
+        line-height:@line-height-heading;
+        color:@headingColor;
 		strong, &.bold, .bold {
 			font-weight:700;
 		}
@@ -27,9 +29,10 @@ h1, h2, h3, h4, h5, h6, .font-head {
 Main Variables
 \*-------------------------------------------*/
 
-@baseColor : #366D8B;
-@buttonMain : #FF8800;
-@buttonCustom : #2F6280;
+@baseColor : #002157;
+@buttonMain : #f26d7d;
+@buttonCustom : #b5cfd9;
+@headingColor : #04151f;
 @line-height-heading: 1.4;
 @line-height-body: 1.5;
 @pixelfont: 16px;
@@ -40,14 +43,111 @@ Main Variables
 @h5 : 18px;
 @h6 : 16px;
 @lead: 18px;
-@accent2 : #FF8800;
-@accent3 : #737373;
-@accent4 : #074569;
-@accent5 : #FA9A2A;
+@accent2 : #f26d7d;
 
 /* Do not touch */
 @darkColor : #000; 
 @lightColor : #fff;
+
+body, 
+p, 
+.gform_body .gfield input, 
+.gform_body .gfield textarea, 
+.gform_body .gfield select {
+	font-size: @pixelfont;
+	line-height: @line-height-body;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: @line-height-heading;
+}
+
+h1,
+.h1 {
+	font-size: @h1;
+}
+
+h2,
+.h2 {
+	font-size: @h2;
+}
+
+h3,
+.h3 {
+	font-size: @h3;
+}
+
+h4,
+.h4 {
+	font-size: @h4;
+}
+
+h5,
+.h5 {
+	font-size: @h5;
+}
+
+h6,
+.h6 {
+	font-size: @h6;
+}
+.lead {
+	font-size: @lead;
+	line-height: @line-height-body;
+}
+
+/*-------------------------------------------*\
+Accent Colors 
+\*-------------------------------------------*/
+
+.accent {
+	color: @baseColor !important;
+}
+.accent2 {
+	color: @accent2 !important;
+}
+
+/*-------------------------------------------*\
+Custom Fonts
+\*-------------------------------------------*/
+
+.font-custom1 {
+	font-size: 12px;
+}
+.line-height-small {
+	line-height: 1.2;
+}
+
+/*-------------------------------------------*\
+Buttons
+\*-------------------------------------------*/
+
+.btn-primary{
+	border-radius: 4px;
+	font-size: 16px;
+	color: #fff;
+    padding:10px 30px;
+    background-color: @buttonMain;
+    border-color: @buttonMain;
+	&:hover,&:active,&:focus { 
+		color:#fff;
+		background-color: darken(@buttonMain,6%);
+		border-color: darken(@buttonMain,6%);
+	}
+}
+
+.btn-custom {
+	color: #fff;
+	&:hover,&:active,&:focus { 
+		color: #fff;
+		background-color: darken(@buttonCustom,6%);
+		border-color: darken(@buttonCustom,6%);
+	}
+}
+
+/*-------------------------------------------*\
+Header
+\*-------------------------------------------*/
+
 
 #header {
     padding:30px 30px;
@@ -77,6 +177,20 @@ a.brand {
     }
 }
 
+/*-------------------------------------------*\
+Segment
+\*-------------------------------------------*/
+
+.space-huge {
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+/*-------------------------------------------*\
+Body
+\*-------------------------------------------*/
+
+
 body {
     background:#ebebeb;
 }
@@ -87,4 +201,16 @@ body {
     max-width: 230px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.profile-name {
+    letter-spacing: 1px;
+}
+
+.profile-position {
+    font-size: 24px;
+}
+
+.profile-address {
+    font-size: 18px;
 }
