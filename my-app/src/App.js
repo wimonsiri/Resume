@@ -1,18 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
+// import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import Name from './components/Name';
+import Home from './components/Home';
 import About from './components/About';
+import Menu from './components/Menu';
+import Experience from './components/Experience';
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Name/>
-      <About/>
-    </div>
-  );
-}
 
-export default App;
+class App extends React.Component {
+  state = {
+    resumeData: []
+  }
+
+  componentDidMount() {
+    axios.get( '/resumeData.json' )
+      .then(res => {
+        const resumeData = res.data;
+        this.setState({ resumeData });
+      })
+  }
+
+  render() {
+    return(
+      <div className="App">
+        <Header/>
+        <Home data={ this.state.resumeData.main } />
+        <Menu/>
+        <About data={ this.state.resumeData.main } />
+        <Experience data={ this.state.resumeData.resume } />
+      </div>
+      );
+    }
+  }
+  
+  export default App;
+  
