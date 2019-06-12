@@ -4,33 +4,41 @@ class Experience extends React.Component {
 	render() {
 		if ( this.props.data ) {
 			var education = this.props.data.education.map(function(education){
-				return <div key={education.school}><p><strong>{education.school}</strong></p>
-				<p className="info">{education.degree} <span>&bull;</span> GPA: { education.gpa }<span> &bull; </span> <em className="date">{education.graduated}</em></p>
-				<p>{education.description}</p></div>
+				return <div key={education.school}>
+					<p class="date"><span class="font-italic">{education.graduated}</span></p>
+					<p className="degree"><strong>{education.degree}</strong></p>
+					<p class="school my-0">{education.school}</p>
+					<p class="gpa experience-des">GPA: {education.gpa}</p>
+				</div>
 			})
 			var work = this.props.data.work.map(function(work){
-				return <div key={work.company}><h3>{work.company}</h3>
-				<p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-				<p>{work.description}</p>
+				return <div key={work.company}>
+				<p class="date"><span class="font-italic">{work.years}</span></p>
+				<p><strong>{work.title}</strong></p>
+				<p class="company my-0">At {work.company}</p>
+				<p class="experience-des">{work.description}</p>
 				</div>
 			})
 		}
 		return (
-			<section id="Experience" className="segment space-huge">
+			<section id="Experience" className="segment space-small">
 			<div className="container">
+
 			<div className="row">
-			<div className="col-md-12 text-center">
-			<h2 className="text-uppercase">Experience</h2>
+			<div className="col-md-12">
+			<h4><strong>Experience</strong></h4>
 			</div>
 			</div>
-			<div className="row justify-content-center">
-			<div className="col-md-10 text-center">
-			{education}
-			</div>
-			</div>
-			<div className="row justify-content-center">
-			<div className="col-md-10 text-center">
+
+			<div className="row">
+			<div className="col-md-12">
 			{work}
+			</div>
+			</div>
+			
+			<div className="row">
+			<div className="col-md-12">
+			{education}
 			</div>
 			</div>
 			</div>

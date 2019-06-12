@@ -3,10 +3,12 @@
     "name": "Wimonsiri Pokasame",
     "occupation": "Front End Developer",
     "image": "Img_profile.png",
-    "bio": "Hello! I'm Pang. I graduated from a faculty of Information Technology from King Mongkut’s Institute of Technology Ladkrabang. I found my passion for code during high school when I started designing blogs. I’m an experienced Frontend Developer at Pronto Marketing with a demonstrated history of working in the marketing and advertising industry for 3 years. Through my experience with Pronto Marketing, I encounter and cultivate knowledge on international website design on a daily basis as the majority of our clients are based in US. I’m enthusiastic to find more opportunity to further my skills for website design and coding, therefore, I’m looking for an opportunity to work as a full stack developer.",
+    "blurb": "I'm <strong>Pang</strong>,  an experienced Frontend Developer with a demonstrated history of working in the marketing and advertising industry for 3 years. I’m enthusiastic to find more opportunity to further my skills for frontend developing. ",
+    "bio": "I'm <strong>Pang.</strong> I graduated from a faculty of Information Technology from King Mongkut’s Institute of Technology Ladkrabang. I found my passion for code during high school when I started designing blogs. I’m an experienced Frontend Developer at Pronto Marketing with a demonstrated history of working in the marketing and advertising industry for 3 years. Through my experience with Pronto Marketing, I encounter and cultivate knowledge on international website design on a daily basis as the majority of our clients are based in US. I’m enthusiastic to find more opportunity to further my skills for website design and coding, therefore, I’m looking for an opportunity to work as a full stack developer.",
     "contactmessage": "Get in touch",
     "email": "wpakasame@gmail.com",
     "phone": "094-553-8085",
+    "birthday": "Nov 24th, 1993",
     "address":{
       "District": "Prawet",
       "Province": "Bangkok",
@@ -17,12 +19,12 @@
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/wimonsiri75/",
-        "className":"fa fa-linkedin"
+        "className":"fab fa-linkedin-in"
       },
       {
         "name":"github",
         "url":"https://github.com/wimonsiri/",
-        "className":"fa fa-github"
+        "className":"fab fa-github-alt"
       }
     ]
   },
@@ -32,13 +34,13 @@
         "school":"Faculty of Information Technology at King Mongkut's Institute of Technology Ladkrabang",
         "degree":"Bachelor Degree of Science",
         "graduated":"May 2015",
-        "gpa":"-"
+        "gpa":"2.75"
       },
       {
         "school":"Sirirattanathorn School",
         "degree":"Math and Science Department",
         "graduated":"May 2011",
-        "gpa":"2.75"
+        "gpa":"3.00"
       }
     ],
     "work":[
@@ -55,13 +57,19 @@
         "description": "A month of internship there had offered a a valuable insight in knowledge to pursue my passion, everyone was very friendly and supportive in guiding, and teaching me."
       }
     ],
+    "achievement": [
+      {
+        "year": "July 2017",
+        "title": "Pronto Hero of the Month"
+      }
+    ],
     "skills":[
       {
-        "name":"HTML",
+        "name":"HTML/HTML5",
         "level":"90%"
       },
       {
-        "name":"Git",
+        "name":"Git/Version Control",
         "level":"55%"
       },
       {
@@ -95,6 +103,16 @@
       {
         "name":"Web Design/UX",
         "level":"50%"
+      }
+    ],
+    "language": [
+      {
+        "name":"Thai",
+        "level":"100%"
+      },
+      {
+        "name":"English",
+        "level":"100%"
       }
     ]
   },
