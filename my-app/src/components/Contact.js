@@ -10,6 +10,9 @@ class Contact extends React.Component {
       var email       = this.props.data.email;
       var province    = this.props.data.address.Province;
       var country     = this.props.data.address.Country;
+      var socials= this.props.data.social.map(function(socials){
+            return <li className="list-inline-item" key={socials.name}><a href={socials.url} className="social-icon" target="_blank"><i className={socials.className}></i></a></li>
+        })
     }
     return (
         <section id="About" className="segment space-small">
@@ -25,6 +28,9 @@ class Contact extends React.Component {
                   <p class="my-0">Address: {province}, {country}</p>
                   <p class="my-0">Phone: {phone}</p>
                   <p class="my-0">Email: <a href="mailto:{email}">{email}</a></p>
+                  <ul class="socials">
+                  {socials}
+                  </ul>
                   </div>
                 </div>
             </div>
