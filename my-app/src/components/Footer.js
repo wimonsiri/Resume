@@ -2,20 +2,22 @@ import React from 'react';
 
 class Footer extends React.Component {
   render() {
-    if ( this.props.data ) {
-        var socials= this.props.data.social.map(function(socials){
-            return <li className="list-inline-item" key={socials.name}><a href={socials.url} className="social-icon" target="_blank"><i className={socials.className}></i></a></li>
-        })
-    }
     return (
         <footer>
             <section id="footer" className="segment space-small">
-            <div className="container">
-            <div class="row">
-            <div class="col-md-12">
-            <ul class="socials list-unstyled">
-            {socials}
-            </ul>
+            <div className="container-fluid">
+            <div className="row">
+            <div className="col-lg-6 col-sm-4">
+            <div class="mobile-border-top"></div>
+            <div className="footer-border-top">
+            Copyright© 2019 pangthebabydustbunny. All rights reserved.
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+            <div className="footer-border-top"><a href="https://pangthebabydustbunny.wordpress.com/" target="_blank"><strong>Blogs</strong></a></div>
+            </div>
+            <div className="col-lg-2 col-sm-4">
+            <div className="footer-border-top"><a href="tel:0945538085"><strong>Hire Me!</strong></a></div>
             </div>
             </div>
             </div>

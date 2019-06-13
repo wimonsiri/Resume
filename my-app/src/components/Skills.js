@@ -10,7 +10,7 @@ class Skills extends React.Component {
             
         }
         return (
-        <section id="Experience" className="segment space-small">
+        <section id="Skills" className="segment space-small">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

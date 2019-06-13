@@ -328,6 +328,55 @@ a.brand {
 	}
 }
 
+.bm-burger-button {
+	position: absolute;
+    right: 25px;
+    top: 40px;
+	color:#fff;
+	font-size:40px;
+	opacity: 0;
+	visibility: hidden;
+	width: 40px;
+    height: 30px;
+  }
+
+  .bm-burger-bars {
+	  height:3px !important;
+	  background: #fff;
+  }
+
+/*-------------------------------------------*\
+Menu
+\*-------------------------------------------*/
+
+.bm-menu {
+	background-color: #0000dc;
+	padding: 40px;
+}
+
+.bm-menu a {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #fff;
+}
+
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    background-color: #fff;
+}
+
 /*-------------------------------------------*\
 Segment
 \*-------------------------------------------*/
@@ -443,10 +492,9 @@ a {
 
 ul.skills {
 	padding-left: 0;
-	margin: 0 auto;
+	margin:0;
 	display: table;
 	width: 100%;
-	max-width: 400px;
 }
 
 .bar-expand {
@@ -468,28 +516,39 @@ ul.skills {
 }
 
 .social-icon {
-	width: 40px;
-	height: 40px;
-	background: #dcdcdc;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align:center;
-	-ms-flex-align:center;
-	align-items:center;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	border-radius: 50%;
-	text-decoration: none !important;
-	color:#04151f;
+	color:#ffffff;
+	font-size: 22px;
+	&:hover, &:active, &:focus {
+		color:#f00;
+	}
 }
-
-#footer {
-	background-color: #b5cfd9;
-}
-
 .socials {
 	margin-bottom:0;
+	margin-top:10px;
+	padding-left: 0;
+	.list-inline-item:not(:last-child) {
+		margin-right:15px;
+	}
 }
 
+.footer-border-top {
+	padding-top: 5px;
+    border-top: 1px solid #fff;
+}
+
+@media (max-width: 575px) {
+	.bm-burger-button {
+		opacity: 1;
+		visibility: visible;
+	}
+	nav#pageNav {
+		display: none;
+	}
+	.footer-border-top {
+		border-top:0;
+		text-align: center;
+	}
+	.mobile-border-top {
+		border-top: 1px solid #fff;
+	}
+}
